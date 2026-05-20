@@ -36,7 +36,7 @@ while True:
     print("Divisão: 3")
     print("Subtração: 4")
     print("Exponenciação: 5")
-    print("Procentagem Total/percentual: 6")
+    print("Procentagem Total: 6")
     print("Sair: 0")
 
     opcao = int(input("Escolha a operação: "))

@@ -25,7 +25,7 @@ def exponent(a,b):
     return a**b
 
 def porcet(a,b):
-    return (a*(b/100))
+    return (a*()
 
 
 
@@ -36,7 +36,6 @@ while True:
     print("Divisão: 3")
     print("Subtração: 4")
     print("Exponenciação: 5")
-    print("Procentagem Total/percentual: 6")
     print("Sair: 0")
 
     opcao = int(input("Escolha a operação: "))
@@ -68,9 +67,7 @@ while True:
         resultado = exponent(num1,num2)
         print(f"Resultado = {resultado}")
 
-    elif opcao == 6:
-        resultado = porcet(num1,num2)
-        print(f"Resultado = {resultado}")
+
 
 
 
