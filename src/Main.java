@@ -1,4 +1,6 @@
-import br.com.calculadora.operacoes.*;
+import br.com.calculadora.operacoes.OperacaoFactory;
+import br.com.calculadora.operacoes.OperacaoMatematica;
+
 import java.util.Scanner;
 
 public class Main {
