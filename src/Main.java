@@ -1,5 +1,5 @@
 import br.com.calculadora.operacoes.*;
-import java.util.Scanner;
+import java.util.Scann;
 
 public class Main {
     public static void main(String[] args) {
