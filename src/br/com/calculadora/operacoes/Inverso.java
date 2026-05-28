@@ -1,29 +1,14 @@
-import java.util.Scanner;
+package br.com.calculadora.operacoes;
 
-public class Inverso {
-    public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in);
+public class Inverso implements OperacaoMatematica {
 
-        System.out.print("Digite um número: ");
-        double numero = leitor.nextDouble();
-
-        // Se o número for zero, avisa que não dá
-        if (numero == 0) {
-            System.out.println("Não existe inverso de zero!");
-        }
-        // Se NÃO for zero, chama o método que isola a conta
-        else {
-            // Chamamos o método e guardamos o 'return' dele na variável resultado
-            double resultado = calcularInverso(numero);
-            System.out.println("O inverso é: " + resultado);
+    public double calcular(double num1, double num2) {
+        // Verifica se o primeiro número é zero
+        if (num1 == 0) {
+            throw new ArithmeticException("Divisão por zero não é permitida!");
         }
 
-        leitor.close();
-    }
-
-    // NOVO MÉTODO: Ele recebe um número e RETORNA um double
-    public static double calcularInverso(double num) {
-        double inverso = 1.0 / num;
-        return inverso; // Agora o return funciona perfeitamente!
+        // Retorna o inverso (1 dividido pelo número)
+        return 1 / num1;
     }
 }
